@@ -10,5 +10,6 @@ import java.util.Collections;
 @Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE, imports = Collections.class)
 public interface AirportMapper {
     AirportRepresentation convert(AirportRecord source);
+
     AirportRecord convert(AirportRepresentation source);
 }

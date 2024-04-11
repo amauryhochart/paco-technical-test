@@ -12,7 +12,7 @@ public class AirportService {
     private final AirportRepository airportRepository;
 
     public Mono<AirportRecord> findByIataCode(final String iataCode) {
-        System.err.println("finding by iata code:"+iataCode);
+        System.err.println("finding by iata code:" + iataCode);
         return airportRepository.findAirportRecordByIata(iataCode);
 //        return airportRepository.findById(iataCode);
     }
